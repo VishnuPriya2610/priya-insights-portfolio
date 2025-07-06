@@ -10,7 +10,7 @@ import ParticleBackground from '@/components/ParticleBackground';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gray-950 text-white relative overflow-hidden">
+    <div className="min-h-screen bg-white text-gray-900 relative overflow-hidden">
       <ParticleBackground />
       <Header />
       <main className="relative z-10">

@@ -37,13 +37,13 @@ const ParticleBackground = () => {
           vx: (Math.random() - 0.5) * 0.5,
           vy: (Math.random() - 0.5) * 0.5,
           size: Math.random() * 2 + 0.5,
-          opacity: Math.random() * 0.5 + 0.2
+          opacity: Math.random() * 0.3 + 0.1
         });
       }
     };
 
     const animate = () => {
-      ctx.fillStyle = 'rgba(3, 7, 18, 0.05)';
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((particle, index) => {
@@ -68,7 +68,7 @@ const ParticleBackground = () => {
             ctx.beginPath();
             ctx.moveTo(particle.x, particle.y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(59, 130, 246, ${0.1 * (1 - distance / 100)})`;
+            ctx.strokeStyle = `rgba(59, 130, 246, ${0.05 * (1 - distance / 100)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -99,7 +99,7 @@ const ParticleBackground = () => {
     <canvas
       ref={canvasRef}
       className="fixed inset-0 -z-10"
-      style={{ background: 'linear-gradient(135deg, #030712 0%, #111827 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #ffffff 0%, #f8fafc 100%)' }}
     />
   );
 };
