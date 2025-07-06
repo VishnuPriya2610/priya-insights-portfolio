@@ -1,6 +1,6 @@
 # Welcome to project
 
-**URL:(https://lovable.dev/projects/73547c63-14cf-49be-9461-a434e03f2dca)**
+**URL:(https://vishnupriyas.netlify.app/)**
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
